@@ -1,0 +1,26 @@
+ion-menu{
+    img{
+        border-radius: 50%;
+        height: 100px;
+    }
+    // .toolbar-background-md, .toolbar-background-ios{
+    //     background-color: rgba(11, 13, 27, 0.733);
+    // }
+    ion-toolbar{
+       height:  200px;
+    }
+    .toolbar-content{
+        display: flex;
+        justify-content: center;
+    }
+    .scroll-content{
+        background-color: color($colors, energized);
+    }
+    ion-list{
+        .item-block{
+            background: none;
+            color: color($colors, light);
+            
+        }
+    }
+}
