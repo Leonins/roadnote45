@@ -17,9 +17,9 @@
 
 
 <ion-content padding>	
-  <ion-searchbar></searchbar>
+  <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="searchPenalties()"></ion-searchbar>
 	<ion-list>
-	  <button ion-item text-wrap *ngFor="let finePenalties of finesPenalties$ | async">
+	  <button ion-item text-wrap *ngFor="let finePenalties of showPenalties">
       {{finePenalties.vf_name}}
     </button>
 	</ion-list>
